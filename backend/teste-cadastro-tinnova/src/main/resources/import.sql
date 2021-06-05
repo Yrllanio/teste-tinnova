@@ -1,0 +1,10 @@
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Fiesta', 'Ford', 2020, 'Compacto e moderno', false, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Strada', 'Fiat', 2019, 'Compacto e moderno', true, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Camaro', 'Chevrolet', 1999, 'Compacto e moderno', false, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Mustang', 'Ford', 2015, 'Compacto e moderno', true, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Gol', 'Volskwagem', 2009, 'Compacto e moderno', false, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Onix', 'Chevrolet', 2008, 'Compacto e moderno', true, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Logan', 'Renault', 2008, 'Compacto e moderno', false, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Mustang', 'Ford', 2015, 'Compacto e moderno', true, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Mustang', 'Ford', 2015, 'Compacto e moderno', true, NOW(), NOW());
+INSERT INTO tb_veiculo (veiculo, marca, ano, descricao, vendido, created, updated) VALUES ('Camaro', 'Chevrolet', 1999, 'Compacto e moderno', false, NOW(), NOW());

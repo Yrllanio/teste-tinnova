@@ -17,12 +17,8 @@ public interface VeiculoRepository extends JpaRepository<Veiculo, Long> {
 	@Query("SELECT new com.tinnova.dto.VeiculoPorMarcaDTO(obj.marca, COUNT(obj.marca)) "
 			+ " FROM Veiculo AS obj GROUP BY obj.marca")
 	List<VeiculoPorMarcaDTO> veiculoPorMarca();
-	
-//	@Query("SELECT new com.tinnova.dto.VeiculoPorDecadaDTO(obj.ano, COUNT(obj.ano)) "
-//			+ " FROM Veiculo AS obj GROUP BY obj.ano")
-//	@Query(value = "SELECT CONCAT(SUBSTRING(CAST(ANO as TEXT), 0, 3),'0') FROM tb_veiculo WHERE ANO > 1000 limit 10", nativeQuery = true)
-	
+
 	@Query("SELECT DISTINCT new com.tinnova.dto.VeiculoPorDecadaDTO(obj.ano/10*10, COUNT(obj.ano)) "
-	+ " FROM Veiculo AS obj GROUP BY obj.ano/10*10")
+			+ " FROM Veiculo AS obj GROUP BY obj.ano/10*10")
 	List<VeiculoPorDecadaDTO> veiculoPorDecada();
 }

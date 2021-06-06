@@ -41,6 +41,7 @@ public class VeiculoService {
 		return new VeiculoDTO(entity);
 
 	}
+
 	//
 	@Transactional(readOnly = true)
 	public VeiculosNaoVendidosDTO veiculosNaoVendidos() {
@@ -51,11 +52,12 @@ public class VeiculoService {
 	public List<VeiculoPorMarcaDTO> veiculosPorMarca() {
 		return repository.veiculoPorMarca();
 	}
-	
+
 	@Transactional(readOnly = true)
 	public List<VeiculoPorDecadaDTO> veiculosPorDecada() {
 		return repository.veiculoPorDecada();
 	}
+
 	//
 	@Transactional
 	public VeiculoDTO insert(VeiculoDTO dto) {

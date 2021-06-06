@@ -74,6 +74,7 @@ public class VeiculoController {
 		return ResponseEntity.ok().body(dto);
 	}
 	
+
 	@DeleteMapping(value = "/{id}")
 	public ResponseEntity<VeiculoDTO> delete(@PathVariable Long id) {
 		service.delete(id);

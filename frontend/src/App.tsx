@@ -1,9 +1,8 @@
+import Routes from "Routes";
 
 function App() {
   return (
-    <div>
-      <h1>Cadastro de Veículo</h1>
-    </div>
+    <Routes />
   );
 }
 

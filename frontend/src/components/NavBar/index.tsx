@@ -7,7 +7,7 @@ const NavBar = () => {
                 <nav className="my-2 my-md-0 mr-md-3">
                     <Link to="/">
                         <h3 className="text-primary">TINNOVA - Veículos</h3>
-                    </Link>
+                    </Link>                    
                 </nav>
             </div>
         </div>

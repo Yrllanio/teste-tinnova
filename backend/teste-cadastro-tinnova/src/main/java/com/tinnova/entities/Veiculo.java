@@ -19,6 +19,8 @@ public class Veiculo implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String veiculo;
+	
+	@Column(columnDefinition = "VARCHAR(30) CHECK (marca IN ('Fiat', 'Ford', 'Chevrolet', 'Volkswagen', 'Renault'))")
 	private String marca;
 	private Integer ano;
 	

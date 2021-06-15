@@ -1,6 +1,7 @@
 import Home from 'pages/Home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ListaVeiculos from 'pages/ListaVeiculos';
+import ListaVeiculos from 'pages/ListarVeiculos';
+import ListarVeiculos from 'pages/ListarVeiculos';
 
 
 const Routes = () => {
@@ -10,8 +11,8 @@ const Routes = () => {
                 <Route path="/" exact>
                     <Home />
                 </Route>
-                <Route path="/listaveiculos">
-                    <ListaVeiculos />
+                <Route path="/listarveiculos">
+                    <ListarVeiculos />
                 </Route>
             </Switch>
         </BrowserRouter>

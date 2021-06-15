@@ -15,8 +15,8 @@ const DadosVeiculo = () => {
         totalPages: 0,
     });
 
-    useEffect(() => {
-        axios.get(`${BASE_URL}/veiculos?page=${activePage}&size=10&sort=created,desc`)
+    useEffect(() => {        
+        axios.get(`${BASE_URL}/veiculos?page=${activePage}&size=12&sort=id,asc`)
             .then(response => {
                 setPage(response.data);
             });
@@ -27,12 +27,12 @@ const DadosVeiculo = () => {
     };
 
     return (
-        <>
-            <Pagination page={page} onPageChange={changePage} />
+        <>  <Pagination page={page} onPageChange={changePage} />
             <div className="table-responsive">
                 <table className="table table-striped table-sm">
                     <thead>
                         <tr>
+                            <th>Id</th>
                             <th>Veiculo</th>
                             <th>Marca</th>
                             <th>Ano</th>
@@ -45,6 +45,7 @@ const DadosVeiculo = () => {
                     <tbody>
                         {page.content?.map(item => (
                             <tr key={item.id}>
+                                <td>{(item.id)}</td>
                                 <td>{(item.veiculo)}</td>
                                 <td>{(item.marca)}</td>
                                 <td>{(item.ano)}</td>
@@ -57,7 +58,6 @@ const DadosVeiculo = () => {
                     </tbody>
                 </table>
             </div>
-
         </>
     );
 }

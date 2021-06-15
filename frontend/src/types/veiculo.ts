@@ -20,3 +20,7 @@ export type VeiculoPage = {
     numberOfElements?: number;
     empty?: boolean;
 }
+
+export type NaoVendidos = {
+    veiculosNaoVendidos: number;
+}

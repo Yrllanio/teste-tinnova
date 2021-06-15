@@ -12,9 +12,9 @@ const Home = () => {
                 <p className="lead">Controle o cadastro de seus veículos de maneira simples e organizada.</p>
                 <hr />
                 <p>Esta aplicação consiste em cadastrar e exibir informações de veículos a partir de dados fornecidos por um back end construído com Spring Boot.</p>
-                <Link className="btn btn-warning btn-lg" to="/listaveiculos">
+                <Link className="btn btn-warning btn-lg" to="/listarveiculos">
                     Acessar
-                </Link>
+                </Link>                
             </div>
         </div>
         <Footer />

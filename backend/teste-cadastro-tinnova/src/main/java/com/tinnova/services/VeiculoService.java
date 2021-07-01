@@ -39,7 +39,6 @@ public class VeiculoService {
 		Optional<Veiculo> obj = repository.findById(id);
 		Veiculo entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
 		return new VeiculoDTO(entity);
-
 	}
 
 	//
@@ -76,8 +75,8 @@ public class VeiculoService {
 	@Transactional
 	public VeiculoDTO update(Long id, VeiculoDTO dto) {
 		try {
-			@SuppressWarnings("deprecation")
-			Veiculo entity = repository.getOne(id);
+			
+			Veiculo entity = repository.getById(id);
 			entity.setVeiculo(dto.getVeiculo());
 			entity.setMarca(dto.getMarca());
 			entity.setAno(dto.getAno());

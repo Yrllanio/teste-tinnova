@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
 @Entity
@@ -102,16 +104,18 @@ public class Veiculo implements Serializable {
 		return created;
 	}
 
-	public void setCreated(Instant created) {
-		this.created = created;
-	}
-
 	public Instant getUpdated() {
 		return updated;
 	}
-
-	public void setUpdated(Instant updated) {
-		this.updated = updated;
+	
+	@PrePersist
+	public void prePersist() {
+		created = Instant.now();
+	}
+	
+	@PreUpdate
+	public void preUpdate() {
+		updated = Instant.now();
 	}	
 
 }

@@ -65,9 +65,7 @@ public class VeiculoService {
 		entity.setMarca(dto.getMarca());
 		entity.setAno(dto.getAno());
 		entity.setDescricao(dto.getDescricao());
-		entity.setVendido(dto.getVendido());
-		entity.setCreated(dto.getCreated());
-		entity.setUpdated(dto.getUpdated());
+		entity.setVendido(dto.getVendido());		
 		entity = repository.save(entity);
 		return new VeiculoDTO(entity);
 	}
@@ -81,9 +79,7 @@ public class VeiculoService {
 			entity.setMarca(dto.getMarca());
 			entity.setAno(dto.getAno());
 			entity.setDescricao(dto.getDescricao());
-			entity.setVendido(dto.getVendido());
-			entity.setCreated(dto.getCreated());
-			entity.setUpdated(dto.getUpdated());
+			entity.setVendido(dto.getVendido());			
 			entity = repository.save(entity);
 			return new VeiculoDTO(entity);
 		} catch (EntityNotFoundException e) {
